@@ -1191,7 +1191,7 @@ def find_devices(timeout=0.002, verbose=False, initial_wait=0.1):
 # Auto detect baudrate
 ################################################################
 def find_baudrate(port, timeout=0.002, verbose=False, initial_wait=0.1):
-    baudrates = (115200, 460800, 921600, 230400, 57600, 38400, 19200, 9600)
+    baudrates = (460800, 115200, 921600, 230400, 57600, 38400, 19200, 9600)
     for br in baudrates:
         if verbose:
             print("Trying %d bd:" % br,
